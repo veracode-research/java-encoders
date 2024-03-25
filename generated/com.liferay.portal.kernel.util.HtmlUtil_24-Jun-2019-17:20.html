@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Encoding Summary Page</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" media="all" rel="stylesheet" href="/crlf-cleansers/generated/bulma.css">
+
+</head>
+
+<section class="hero is-bold">
+    <div class="hero-head"></div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="title">com.liferay.portal.kernel.util.HtmlUtil</div>
+            <div class="subtitle">from RES-1186</div>
+        </div>
+    </div>
+
+    <div class="hero-foot"></div>
+
+</section>
+
+
+<div class="container is-centered  is-fluid" >
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small">escapeAttribute</th>
+                <th class="is-small">escape</th>
+                <th class="is-small">escapeCSS</th>
+                <th class="is-small">escapeHREF</th>
+                <th class="is-small">escapeJS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[0x000A] - LINE FEED (LF)</td>
+                <td>[10]   ~unchgd</td>
+                <td>[10]   ~unchgd</td>
+                <td>\0a</td>
+                <td>[10]   ~unchgd</td>
+                <td>\x0a</td>
+            </tr>
+            <tr>
+                <td>[0x000B] - LINE TABULATION</td>
+                <td>[32]</td>
+                <td>[32]</td>
+                <td>\0b</td>
+                <td>[32]</td>
+                <td>\x0b</td>
+            </tr>
+            <tr>
+                <td>[0x000C] - FORM FEED (FF)</td>
+                <td>[32]</td>
+                <td>[32]</td>
+                <td>\0c</td>
+                <td>[32]</td>
+                <td>\x0c</td>
+            </tr>
+            <tr>
+                <td>[0x000D] - CARRIAGE RETURN (CR)</td>
+                <td>[13]   ~unchgd</td>
+                <td>[13]   ~unchgd</td>
+                <td>\0d</td>
+                <td>[13]   ~unchgd</td>
+                <td>\x0d</td>
+            </tr>
+            <tr>
+                <td>[0x0085] - NEXT LINE (NEL)</td>
+                <td>[133]   ~unchgd</td>
+                <td>[133]   ~unchgd</td>
+                <td>\85</td>
+                <td>[133]   ~unchgd</td>
+                <td>\x85</td>
+            </tr>
+            <tr>
+                <td>[0x008B] - PARTIAL LINE FORWARD</td>
+                <td>[139]   ~unchgd</td>
+                <td>[139]   ~unchgd</td>
+                <td>\8b</td>
+                <td>[139]   ~unchgd</td>
+                <td>\x8b</td>
+            </tr>
+            <tr>
+                <td>[0x008D] - REVERSE LINE FEED</td>
+                <td>[141]   ~unchgd</td>
+                <td>[141]   ~unchgd</td>
+                <td>\8d</td>
+                <td>[141]   ~unchgd</td>
+                <td>\x8d</td>
+            </tr>
+            <tr>
+                <td>[0x2028] - LINE SEPARATOR</td>
+                <td>[8232]   ~unchgd</td>
+                <td>&amp;#8232;</td>
+                <td>[8232]   ~unchgd</td>
+                <td>[8232]   ~unchgd</td>
+                <td>\u2028</td>
+            </tr>
+            <tr>
+                <td>[0x2029] - PARAGRAPH SEPARATOR</td>
+                <td>[8233]   ~unchgd</td>
+                <td>[8233]   ~unchgd</td>
+                <td>[8233]   ~unchgd</td>
+                <td>[8233]   ~unchgd</td>
+                <td>\u2029</td>
+            </tr>
+            <tr>
+                <td>[0x005C] - \</td>
+                <td>\   ~unchgd</td>
+                <td>\   ~unchgd</td>
+                <td>\5c</td>
+                <td>\   ~unchgd</td>
+                <td>\x5c</td>
+            </tr>
+            <tr>
+                <td>[0x0027] - &#39;</td>
+                <td>&amp;#39;</td>
+                <td>&amp;#39;</td>
+                <td>\27</td>
+                <td>&amp;#39;</td>
+                <td>\x27</td>
+            </tr>
+            <tr>
+                <td>[0x0022] - &quot;</td>
+                <td>&amp;quot;</td>
+                <td>&amp;#34;</td>
+                <td>\22</td>
+                <td>&amp;quot;</td>
+                <td>\x22</td>
+            </tr>
+            <tr>
+                <td>[0x003C] - &lt;</td>
+                <td>&amp;lt;</td>
+                <td>&amp;lt;</td>
+                <td>\3c</td>
+                <td>&amp;lt;</td>
+                <td>\x3c</td>
+            </tr>
+            <tr>
+                <td>[0x003E] - &gt;</td>
+                <td>&amp;gt;</td>
+                <td>&amp;gt;</td>
+                <td>\3e</td>
+                <td>&amp;gt;</td>
+                <td>\x3e</td>
+            </tr>
+            <tr>
+                <td>[0x003A] - :</td>
+                <td>:   ~unchgd</td>
+                <td>:   ~unchgd</td>
+                <td>\3a</td>
+                <td>%3a</td>
+                <td>\x3a</td>
+            </tr>
+            <tr>
+                <td>[0x003B] - ;</td>
+                <td>;   ~unchgd</td>
+                <td>;   ~unchgd</td>
+                <td>\3b</td>
+                <td>;   ~unchgd</td>
+                <td>\x3b</td>
+            </tr>
+            <tr>
+                <td>[0x0026] - &amp;</td>
+                <td>&amp;amp;</td>
+                <td>&amp;amp;</td>
+                <td>\26</td>
+                <td>&amp;amp;</td>
+                <td>\x26</td>
+            </tr>
+            <tr>
+                <td>[0x002F] - /</td>
+                <td>/   ~unchgd</td>
+                <td>/   ~unchgd</td>
+                <td>\2f</td>
+                <td>/   ~unchgd</td>
+                <td>\x2f</td>
+            </tr>
+            <tr>
+                <td>[0x003D] - =</td>
+                <td>=   ~unchgd</td>
+                <td>=   ~unchgd</td>
+                <td>\3d</td>
+                <td>=   ~unchgd</td>
+                <td>\x3d</td>
+            </tr>
+            <tr>
+                <td>[0x0028] - (</td>
+                <td>(   ~unchgd</td>
+                <td>(   ~unchgd</td>
+                <td>\28</td>
+                <td>(   ~unchgd</td>
+                <td>\x28</td>
+            </tr>
+            <tr>
+                <td>[0x0029] - )</td>
+                <td>)   ~unchgd</td>
+                <td>)   ~unchgd</td>
+                <td>\29</td>
+                <td>)   ~unchgd</td>
+                <td>\x29</td>
+            </tr>
+            <tr>
+                <td>[0x005B] - [</td>
+                <td>[   ~unchgd</td>
+                <td>[   ~unchgd</td>
+                <td>\5b</td>
+                <td>[   ~unchgd</td>
+                <td>\x5b</td>
+            </tr>
+            <tr>
+                <td>[0x007B] - {</td>
+                <td>{   ~unchgd</td>
+                <td>{   ~unchgd</td>
+                <td>\7b</td>
+                <td>{   ~unchgd</td>
+                <td>\x7b</td>
+            </tr>
+            <tr>
+                <td>[0x007D] - }</td>
+                <td>}   ~unchgd</td>
+                <td>}   ~unchgd</td>
+                <td>\7d</td>
+                <td>}   ~unchgd</td>
+                <td>\x7d</td>
+            </tr>
+            <tr>
+                <td>[0x0023] - #</td>
+                <td>#   ~unchgd</td>
+                <td>#   ~unchgd</td>
+                <td>\23</td>
+                <td>#   ~unchgd</td>
+                <td>\x23</td>
+            </tr>
+            <tr>
+                <td>[0x0060] - `</td>
+                <td>`   ~unchgd</td>
+                <td>`   ~unchgd</td>
+                <td>\60</td>
+                <td>`   ~unchgd</td>
+                <td>\x60</td>
+            </tr>
+            <tr>
+                <td>[0x0024] - $</td>
+                <td>$   ~unchgd</td>
+                <td>$   ~unchgd</td>
+                <td>\24</td>
+                <td>$   ~unchgd</td>
+                <td>\x24</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<div class="container is-centered  is-fluid">
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small">escapeURL</th>
+                <th class="is-small">escapeXPath</th>
+                <th class="is-small">escapeXPathAttribute</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[0x000A] - LINE FEED (LF)</td>
+                <td>%0A</td>
+                <td>_</td>
+                <td>&quot;[10]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x000B] - LINE TABULATION</td>
+                <td>%0B</td>
+                <td>[11]   ~unchgd</td>
+                <td>&quot;[11]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x000C] - FORM FEED (FF)</td>
+                <td>%0C</td>
+                <td>[12]   ~unchgd</td>
+                <td>&quot;[12]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x000D] - CARRIAGE RETURN (CR)</td>
+                <td>%0D</td>
+                <td>_</td>
+                <td>&quot;[13]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0085] - NEXT LINE (NEL)</td>
+                <td>%C2%85</td>
+                <td>_</td>
+                <td>&quot;[133]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x008B] - PARTIAL LINE FORWARD</td>
+                <td>%C2%8B</td>
+                <td>[139]   ~unchgd</td>
+                <td>&quot;[139]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x008D] - REVERSE LINE FEED</td>
+                <td>%C2%8D</td>
+                <td>[141]   ~unchgd</td>
+                <td>&quot;[141]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x2028] - LINE SEPARATOR</td>
+                <td>%E2%80%A8</td>
+                <td>_</td>
+                <td>&quot;[8232]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x2029] - PARAGRAPH SEPARATOR</td>
+                <td>%E2%80%A9</td>
+                <td>[8233]   ~unchgd</td>
+                <td>&quot;[8233]&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x005C] - \</td>
+                <td>%5C</td>
+                <td>\   ~unchgd</td>
+                <td>&quot;\&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0027] - &#39;</td>
+                <td>%27</td>
+                <td>&#39;   ~unchgd</td>
+                <td>&quot;&#39;&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0022] - &quot;</td>
+                <td>%22</td>
+                <td>_</td>
+                <td>&#39;&quot;&#39;</td>
+            </tr>
+            <tr>
+                <td>[0x003C] - &lt;</td>
+                <td>%3C</td>
+                <td>_</td>
+                <td>&quot;&lt;&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x003E] - &gt;</td>
+                <td>%3E</td>
+                <td>_</td>
+                <td>&quot;&gt;&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x003A] - :</td>
+                <td>%3A</td>
+                <td>_</td>
+                <td>&quot;:&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x003B] - ;</td>
+                <td>%3B</td>
+                <td>;   ~unchgd</td>
+                <td>&quot;;&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0026] - &amp;</td>
+                <td>%26</td>
+                <td>&amp;   ~unchgd</td>
+                <td>&quot;&amp;&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x002F] - /</td>
+                <td>%2F</td>
+                <td>_</td>
+                <td>&quot;/&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x003D] - =</td>
+                <td>%3D</td>
+                <td>_</td>
+                <td>&quot;=&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0028] - (</td>
+                <td>%28</td>
+                <td>_</td>
+                <td>&quot;(&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0029] - )</td>
+                <td>%29</td>
+                <td>_</td>
+                <td>&quot;)&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x005B] - [</td>
+                <td>%5B</td>
+                <td>_</td>
+                <td>&quot;[&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x007B] - {</td>
+                <td>%7B</td>
+                <td>{   ~unchgd</td>
+                <td>&quot;{&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x007D] - }</td>
+                <td>%7D</td>
+                <td>}   ~unchgd</td>
+                <td>&quot;}&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0023] - #</td>
+                <td>%23</td>
+                <td>#   ~unchgd</td>
+                <td>&quot;#&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0060] - `</td>
+                <td>%60</td>
+                <td>`   ~unchgd</td>
+                <td>&quot;`&quot;</td>
+            </tr>
+            <tr>
+                <td>[0x0024] - $</td>
+                <td>%24</td>
+                <td>_</td>
+                <td>&quot;$&quot;</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-right">
+            Content Generated : <span>24 Jun 2019 17:20 BST</span>
+        </div>
+    </div>
+</footer>
+
+</html>

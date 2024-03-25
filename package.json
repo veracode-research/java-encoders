@@ -1,0 +1,14 @@
+{
+  "name": "java",
+  "version": "1.0.0",
+  "description": "Bulma configuration for testcases for res-1186",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giuseppe Trovato",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.4"
+  }
+}

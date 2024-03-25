@@ -1,0 +1,39 @@
+package com.veracode.javaencoders.tests;
+
+import com.veracode.javaencoders.LibraryEncodedResults;
+import com.veracode.javaencoders.MethodEncodeResult;
+import com.veracode.javaencoders.TestChar;
+import com.veracode.javaencoders.TestSet;
+
+import java.util.Iterator;
+
+public class SpringFrameworkHtmlUtils implements EncodeTest{
+
+    private String libraryName = "org.springframework.web.util.HtmlUtils";
+
+    @Override
+    public LibraryEncodedResults runTest(TestSet testSet, LibraryEncodedResults whereToStoreResults) {
+
+        MethodEncodeResult encRes1 = whereToStoreResults.createNewEmptyMethodResult("HtmlUtils.htmlEscape");
+        MethodEncodeResult encRes2 = whereToStoreResults.createNewEmptyMethodResult("HtmlUtils.htmlEscapeDecimal");
+        MethodEncodeResult encRes3 = whereToStoreResults.createNewEmptyMethodResult("HtmlUtils.htmlEscapeHex");
+
+
+
+        Iterator<TestChar> it = testSet.getTestChars().iterator();
+
+        while (it.hasNext()) {
+            char c = it.next().getChar();
+            encRes1.encodedValuePairs.put(c,org.springframework.web.util.HtmlUtils.htmlEscape(String.valueOf(c)));
+            encRes2.encodedValuePairs.put(c,org.springframework.web.util.HtmlUtils.htmlEscapeDecimal(String.valueOf(c)));
+            encRes3.encodedValuePairs.put(c,org.springframework.web.util.HtmlUtils.htmlEscapeHex(String.valueOf(c)));
+        }
+
+        return whereToStoreResults;
+    }
+
+
+    public String getLibraryName() {
+        return libraryName;
+    }
+}

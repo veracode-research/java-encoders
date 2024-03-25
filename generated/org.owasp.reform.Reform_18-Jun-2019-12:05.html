@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Encoding Summary Page</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" media="all" rel="stylesheet" href="bulma.css">
+
+</head>
+
+<section class="hero is-bold">
+    <div class="hero-head"></div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="title">org.owasp.reform.Reform</div>
+            <div class="subtitle">from RES-1186</div>
+        </div>
+    </div>
+
+    <div class="hero-foot"></div>
+
+</section>
+
+
+<div class="container is-centered  is-fluid" >
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small">HtmlAttributeEncode</th>
+                <th class="is-small">HtmlEncode</th>
+                <th class="is-small">JsString</th>
+                <th class="is-small">VbsString</th>
+                <th class="is-small">XmlAttributeEncode</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[0x000A] - LINE FEED (LF)</td>
+                <td>&amp;#10;</td>
+                <td>&amp;#10;</td>
+                <td>&#39;\x0a&#39;</td>
+                <td>chrw(10)</td>
+                <td>&amp;#10;</td>
+            </tr>
+            <tr>
+                <td>[0x000B] - LINE TABULATION</td>
+                <td>&amp;#11;</td>
+                <td>&amp;#11;</td>
+                <td>&#39;\x0b&#39;</td>
+                <td>chrw(11)</td>
+                <td>&amp;#11;</td>
+            </tr>
+            <tr>
+                <td>[0x000C] - FORM FEED (FF)</td>
+                <td>&amp;#12;</td>
+                <td>&amp;#12;</td>
+                <td>&#39;\x0c&#39;</td>
+                <td>chrw(12)</td>
+                <td>&amp;#12;</td>
+            </tr>
+            <tr>
+                <td>[0x000D] - CARRIAGE RETURN (CR)</td>
+                <td>&amp;#13;</td>
+                <td>&amp;#13;</td>
+                <td>&#39;\x0d&#39;</td>
+                <td>chrw(13)</td>
+                <td>&amp;#13;</td>
+            </tr>
+            <tr>
+                <td>[0x0085] - NEXT LINE (NEL)</td>
+                <td>&amp;#133;</td>
+                <td>&amp;#133;</td>
+                <td>&#39;\u0085&#39;</td>
+                <td>chrw(133)</td>
+                <td>&amp;#133;</td>
+            </tr>
+            <tr>
+                <td>[0x008B] - PARTIAL LINE FORWARD</td>
+                <td>&amp;#139;</td>
+                <td>&amp;#139;</td>
+                <td>&#39;\u008b&#39;</td>
+                <td>chrw(139)</td>
+                <td>&amp;#139;</td>
+            </tr>
+            <tr>
+                <td>[0x008D] - REVERSE LINE FEED</td>
+                <td>&amp;#141;</td>
+                <td>&amp;#141;</td>
+                <td>&#39;\u008d&#39;</td>
+                <td>chrw(141)</td>
+                <td>&amp;#141;</td>
+            </tr>
+            <tr>
+                <td>[0x2028] - LINE SEPARATOR</td>
+                <td>&amp;#8232;</td>
+                <td>&amp;#8232;</td>
+                <td>&#39;\u2028&#39;</td>
+                <td>chrw(8232)</td>
+                <td>&amp;#8232;</td>
+            </tr>
+            <tr>
+                <td>[0x2029] - PARAGRAPH SEPARATOR</td>
+                <td>&amp;#8233;</td>
+                <td>&amp;#8233;</td>
+                <td>&#39;\u2029&#39;</td>
+                <td>chrw(8233)</td>
+                <td>&amp;#8233;</td>
+            </tr>
+            <tr>
+                <td>[0x005C] - \</td>
+                <td>&amp;#92;</td>
+                <td>&amp;#92;</td>
+                <td>&#39;\x5c&#39;</td>
+                <td>chrw(92)</td>
+                <td>&amp;#92;</td>
+            </tr>
+            <tr>
+                <td>[0x0027] - &#39;</td>
+                <td>&amp;#39;</td>
+                <td>&amp;#39;</td>
+                <td>&#39;\x27&#39;</td>
+                <td>chrw(39)</td>
+                <td>&amp;#39;</td>
+            </tr>
+            <tr>
+                <td>[0x0022] - &quot;</td>
+                <td>&amp;#34;</td>
+                <td>&amp;#34;</td>
+                <td>&#39;\x22&#39;</td>
+                <td>chrw(34)</td>
+                <td>&amp;#34;</td>
+            </tr>
+            <tr>
+                <td>[0x003C] - &lt;</td>
+                <td>&amp;#60;</td>
+                <td>&amp;#60;</td>
+                <td>&#39;\x3c&#39;</td>
+                <td>chrw(60)</td>
+                <td>&amp;#60;</td>
+            </tr>
+            <tr>
+                <td>[0x003E] - &gt;</td>
+                <td>&amp;#62;</td>
+                <td>&amp;#62;</td>
+                <td>&#39;\x3e&#39;</td>
+                <td>chrw(62)</td>
+                <td>&amp;#62;</td>
+            </tr>
+            <tr>
+                <td>[0x003A] - :</td>
+                <td>&amp;#58;</td>
+                <td>&amp;#58;</td>
+                <td>&#39;\x3a&#39;</td>
+                <td>chrw(58)</td>
+                <td>&amp;#58;</td>
+            </tr>
+            <tr>
+                <td>[0x003B] - ;</td>
+                <td>&amp;#59;</td>
+                <td>&amp;#59;</td>
+                <td>&#39;\x3b&#39;</td>
+                <td>chrw(59)</td>
+                <td>&amp;#59;</td>
+            </tr>
+            <tr>
+                <td>[0x0026] - &amp;</td>
+                <td>&amp;#38;</td>
+                <td>&amp;#38;</td>
+                <td>&#39;\x26&#39;</td>
+                <td>chrw(38)</td>
+                <td>&amp;#38;</td>
+            </tr>
+            <tr>
+                <td>[0x002F] - /</td>
+                <td>&amp;#47;</td>
+                <td>&amp;#47;</td>
+                <td>&#39;\x2f&#39;</td>
+                <td>chrw(47)</td>
+                <td>&amp;#47;</td>
+            </tr>
+            <tr>
+                <td>[0x003D] - =</td>
+                <td>&amp;#61;</td>
+                <td>&amp;#61;</td>
+                <td>&#39;\x3d&#39;</td>
+                <td>chrw(61)</td>
+                <td>&amp;#61;</td>
+            </tr>
+            <tr>
+                <td>[0x0028] - (</td>
+                <td>&amp;#40;</td>
+                <td>&amp;#40;</td>
+                <td>&#39;\x28&#39;</td>
+                <td>chrw(40)</td>
+                <td>&amp;#40;</td>
+            </tr>
+            <tr>
+                <td>[0x0029] - )</td>
+                <td>&amp;#41;</td>
+                <td>&amp;#41;</td>
+                <td>&#39;\x29&#39;</td>
+                <td>chrw(41)</td>
+                <td>&amp;#41;</td>
+            </tr>
+            <tr>
+                <td>[0x005B] - [</td>
+                <td>&amp;#91;</td>
+                <td>&amp;#91;</td>
+                <td>&#39;\x5b&#39;</td>
+                <td>chrw(91)</td>
+                <td>&amp;#91;</td>
+            </tr>
+            <tr>
+                <td>[0x007B] - {</td>
+                <td>&amp;#123;</td>
+                <td>&amp;#123;</td>
+                <td>&#39;\x7b&#39;</td>
+                <td>chrw(123)</td>
+                <td>&amp;#123;</td>
+            </tr>
+            <tr>
+                <td>[0x007D] - }</td>
+                <td>&amp;#125;</td>
+                <td>&amp;#125;</td>
+                <td>&#39;\x7d&#39;</td>
+                <td>chrw(125)</td>
+                <td>&amp;#125;</td>
+            </tr>
+            <tr>
+                <td>[0x0023] - #</td>
+                <td>&amp;#35;</td>
+                <td>&amp;#35;</td>
+                <td>&#39;\x23&#39;</td>
+                <td>chrw(35)</td>
+                <td>&amp;#35;</td>
+            </tr>
+            <tr>
+                <td>[0x0060] - `</td>
+                <td>&amp;#96;</td>
+                <td>&amp;#96;</td>
+                <td>&#39;\x60&#39;</td>
+                <td>chrw(96)</td>
+                <td>&amp;#96;</td>
+            </tr>
+            <tr>
+                <td>[0x0024] - $</td>
+                <td>&amp;#36;</td>
+                <td>&amp;#36;</td>
+                <td>&#39;\x24&#39;</td>
+                <td>chrw(36)</td>
+                <td>&amp;#36;</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<div class="container is-centered  is-fluid">
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small">XmlEncode</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>[0x000A] - LINE FEED (LF)</td>
+                <td>&amp;#10;</td>
+            </tr>
+            <tr>
+                <td>[0x000B] - LINE TABULATION</td>
+                <td>&amp;#11;</td>
+            </tr>
+            <tr>
+                <td>[0x000C] - FORM FEED (FF)</td>
+                <td>&amp;#12;</td>
+            </tr>
+            <tr>
+                <td>[0x000D] - CARRIAGE RETURN (CR)</td>
+                <td>&amp;#13;</td>
+            </tr>
+            <tr>
+                <td>[0x0085] - NEXT LINE (NEL)</td>
+                <td>&amp;#133;</td>
+            </tr>
+            <tr>
+                <td>[0x008B] - PARTIAL LINE FORWARD</td>
+                <td>&amp;#139;</td>
+            </tr>
+            <tr>
+                <td>[0x008D] - REVERSE LINE FEED</td>
+                <td>&amp;#141;</td>
+            </tr>
+            <tr>
+                <td>[0x2028] - LINE SEPARATOR</td>
+                <td>&amp;#8232;</td>
+            </tr>
+            <tr>
+                <td>[0x2029] - PARAGRAPH SEPARATOR</td>
+                <td>&amp;#8233;</td>
+            </tr>
+            <tr>
+                <td>[0x005C] - \</td>
+                <td>&amp;#92;</td>
+            </tr>
+            <tr>
+                <td>[0x0027] - &#39;</td>
+                <td>&amp;#39;</td>
+            </tr>
+            <tr>
+                <td>[0x0022] - &quot;</td>
+                <td>&amp;#34;</td>
+            </tr>
+            <tr>
+                <td>[0x003C] - &lt;</td>
+                <td>&amp;#60;</td>
+            </tr>
+            <tr>
+                <td>[0x003E] - &gt;</td>
+                <td>&amp;#62;</td>
+            </tr>
+            <tr>
+                <td>[0x003A] - :</td>
+                <td>&amp;#58;</td>
+            </tr>
+            <tr>
+                <td>[0x003B] - ;</td>
+                <td>&amp;#59;</td>
+            </tr>
+            <tr>
+                <td>[0x0026] - &amp;</td>
+                <td>&amp;#38;</td>
+            </tr>
+            <tr>
+                <td>[0x002F] - /</td>
+                <td>&amp;#47;</td>
+            </tr>
+            <tr>
+                <td>[0x003D] - =</td>
+                <td>&amp;#61;</td>
+            </tr>
+            <tr>
+                <td>[0x0028] - (</td>
+                <td>&amp;#40;</td>
+            </tr>
+            <tr>
+                <td>[0x0029] - )</td>
+                <td>&amp;#41;</td>
+            </tr>
+            <tr>
+                <td>[0x005B] - [</td>
+                <td>&amp;#91;</td>
+            </tr>
+            <tr>
+                <td>[0x007B] - {</td>
+                <td>&amp;#123;</td>
+            </tr>
+            <tr>
+                <td>[0x007D] - }</td>
+                <td>&amp;#125;</td>
+            </tr>
+            <tr>
+                <td>[0x0023] - #</td>
+                <td>&amp;#35;</td>
+            </tr>
+            <tr>
+                <td>[0x0060] - `</td>
+                <td>&amp;#96;</td>
+            </tr>
+            <tr>
+                <td>[0x0024] - $</td>
+                <td>&amp;#36;</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-right">
+            Content Generated : <span>18 Jun 2019 12:05 BST</span>
+        </div>
+    </div>
+</footer>
+
+</html>

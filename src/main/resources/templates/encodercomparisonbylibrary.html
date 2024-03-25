@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Encoding Summary Page</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" media="all" rel="stylesheet" href="/crlf-cleansers/generated/bulma.css">
+
+</head>
+
+<section class="hero is-bold">
+    <div class="hero-head"></div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="title" th:text="${libraryName}">Titolo</div>
+            <div class="subtitle">from RES-1186</div>
+        </div>
+    </div>
+
+    <div class="hero-foot"></div>
+
+</section>
+
+
+<div class="container is-centered  is-fluid" th:each="iter: ${#numbers.sequence(0,(results.size() / 5)-1)}" th:if="${results.size() / 5 > 0}" >
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small" th:each="methodId : ${#numbers.sequence(iter*5,(iter*5+5)-1)}"
+                    th:text="${results.get(methodId).getMethodName()}">Method Name
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="ch : ${testChars}">
+                <td th:text="${ch.getPrintableCharName()}">char</td>
+                <td th:each="methodId : ${#numbers.sequence(iter*5,(iter*5+5)-1)}"
+                    th:text="${results.get(methodId).getValue(ch.getChar())}">Encoded value
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<div class="container is-centered  is-fluid" th:if="${results.size() % 5 > 0}"
+     th:with="itemsLeft = ${results.size() % 5}">
+    <section class="section">
+        <table class="table is-hoverable is-striped is-narrow is-fullwidth is-bordered">
+            <thead>
+            <tr>
+                <th><abbr title="Encoded Value">Value</abbr></th>
+                <th class="is-small"
+                    th:each="methodId : ${#numbers.sequence(results.size()-itemsLeft,results.size()-1)}"
+                    th:text="${results.get(methodId).getMethodName()}">Method Name
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="ch : ${testChars}">
+                <td th:text="${ch.getPrintableCharName()}">char</td>
+                <td th:each="methodId : ${#numbers.sequence(results.size()-itemsLeft,results.size()-1)}"
+                    th:text="${results.get(methodId).getValue(ch.getChar())}">Encoded value
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-right">
+            Content Generated : <span th:text="${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm z')}"> -- : --</span>
+        </div>
+    </div>
+</footer>
+
+</html>
