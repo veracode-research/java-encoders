@@ -476,35 +476,35 @@ all the whitespaces inside the string unmodified.
 ## org.apache.axis.components.encoding.XMLEncoder
 ### Encoded Output
 
-||Value||encode||
-|---|---|
-|[0x000A] - LINE FEED (LF)|[10]   ~unchgd|
-|[0x000B] - LINE TABULATION|[11]   ~unchgd|
-|[0x000C] - FORM FEED (FF)|Exception[32]encoding...The[32]char[32]&#39;0xc&#39;[32]after[32]&#39;&#39;[32]is[32]not[32]a[32]valid[32]XML[32]character.|
-|[0x000D] - CARRIAGE RETURN (CR)|[13]   ~unchgd|
-|[0x0085] - NEXT LINE (NEL)|[133]   ~unchgd|
-|[0x008B] - PARTIAL LINE FORWARD|[139]   ~unchgd|
-|[0x008D] - REVERSE LINE FEED|[141]   ~unchgd|
-|[0x2028] - LINE SEPARATOR|[8232]   ~unchgd|
-|[0x2029] - PARAGRAPH SEPARATOR|[8233]   ~unchgd|
-|[0x005C] - \ |\   ~unchgd|
-|[0x0027] - &#39;|&#39;   ~unchgd|
-|[0x0022] - &quot;|&amp;quot;|
-|[0x003C] - &lt;|&amp;lt;|
-|[0x003E] - &gt;|&amp;gt;|
-|[0x003A] - :|:   ~unchgd|
-|[0x003B] - ;|;   ~unchgd|
-|[0x0026] - &amp;|&amp;amp;|
-|[0x002F] - /|/   ~unchgd|
-|[0x003D] - =|=   ~unchgd|
-|[0x0028] - (|(   ~unchgd|
-|[0x0029] - )|)   ~unchgd|
-|[0x005B] - [|[   ~unchgd|
-|[0x007B] - {|{   ~unchgd|
-|[0x007D] - }|}   ~unchgd|
-|[0x0023] - #|#   ~unchgd|
-|[0x0060] - `|`   ~unchgd|
-|[0x0024] - $|$   ~unchgd|
+|Value| encode                                                                                     |
+|---|--------------------------------------------------------------------------------------------|
+|[0x000A] - LINE FEED (LF)| [10]   ~unchgd                                                                             |
+|[0x000B] - LINE TABULATION| [11]   ~unchgd                                                                             |
+|[0x000C] - FORM FEED (FF)| Exception encoding...The char &#39;0xc&#39; after &#39;&#39; is not a valid XML character. |
+|[0x000D] - CARRIAGE RETURN (CR)| [13]   ~unchgd                                                                             |
+|[0x0085] - NEXT LINE (NEL)| [133]   ~unchgd                                                                            |
+|[0x008B] - PARTIAL LINE FORWARD| [139]   ~unchgd                                                                            |
+|[0x008D] - REVERSE LINE FEED| [141]   ~unchgd                                                                            |
+|[0x2028] - LINE SEPARATOR| [8232]   ~unchgd                                                                           |
+|[0x2029] - PARAGRAPH SEPARATOR| [8233]   ~unchgd                                                                           |
+|[0x005C] - \ | \   ~unchgd                                                                                |
+|[0x0027] - &#39;| &#39;   ~unchgd                                                                            |
+|[0x0022] - &quot;| &amp;quot;                                                                                 |
+|[0x003C] - &lt;| &amp;lt;                                                                                   |
+|[0x003E] - &gt;| &amp;gt;                                                                                   |
+|[0x003A] - :| :   ~unchgd                                                                                |
+|[0x003B] - ;| ;   ~unchgd                                                                                |
+|[0x0026] - &amp;| &amp;amp;                                                                                  |
+|[0x002F] - /| /   ~unchgd                                                                                |
+|[0x003D] - =| =   ~unchgd                                                                                |
+|[0x0028] - (| (   ~unchgd                                                                                |
+|[0x0029] - )| )   ~unchgd                                                                                |
+|[0x005B] - [| [   ~unchgd                                                                                |
+|[0x007B] - {| {   ~unchgd                                                                                |
+|[0x007D] - }| }   ~unchgd                                                                                |
+|[0x0023] - #| #   ~unchgd                                                                                |
+|[0x0060] - `| `   ~unchgd                                                                                |
+|[0x0024] - $| $   ~unchgd                                                                                |
 
 
 ## org.owasp.esapi.ESAPI
